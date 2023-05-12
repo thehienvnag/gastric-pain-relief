@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dược phẩm dân tộc Tâm Việt</title>
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Meslo&display=swap" />
+
+    <style>
+        body {
+            font-family: 'Meslo', monospace;
+        }
+
+        .shadow {
+            -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+            -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+            box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+        }
+
+
+        .fa-phone {
+            font-size: 22px;
+            color: #f44336;
+        }
+
+        .fa-tiktok {
+            font-size: 22px;
+            color: #111111;
+            filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+        }
+
+        .fa-facebook-square {
+            font-size: 22px;
+            color: #3b5998;
+            background-image: linear-gradient(to bottom, transparent 20%, white 20%, white 93%, transparent 93%);
+            background-size: 55%;
+            background-position: 70% 0;
+            background-repeat: no-repeat;
+        }
+
+        .zalo-icon {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/2048px-Icon_of_Zalo.svg.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            font-size: 22px;
+        }
+
+
+        .button-3d {
+            position: relative;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            overflow: hidden;
+            cursor: pointer;
+            transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .button-3d:hover {
+            background-color: #6D28D9;
+            transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) scale(1.1);
+        }
+
+        .button-3d:hover:before {
+            transform: rotateX(35deg) rotateY(0deg) translateZ(-160px) scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav id="app-header" class="flex items-center justify-between flex-wrap bg-white p-6 fixed w-full z-10">
+        <div class="flex items-center flex-shrink-0 text-black mr-6">
+            <span class="font-semibold text-xl tracking-tight">GIẢM ĐAU DẠ DÀY</span>
+        </div>
+        <div class="block lg:hidden">
+            <button id="nav-toggle"
+                class="flex items-center px-3 py-2 border rounded text-black border-black hover:text-gray-700 hover:border-gray-700">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path
+                        d="M0 3a3 3 0 013-3h14a3 3 0 110 6H3a3 3 0 01-3-3zm0 7a3 3 0 013-3h14a3 3 0 110 6H3a3 3 0 01-3-3zm0 7a3 3 0 013-3h14a3 3 0 110 6H3a3 3 0 01-3-3z" />
+                </svg>
+            </button>
+        </div>
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden" id="nav-content">
+            <div class="text-sm lg:flex-grow">
+                <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-700 mr-4">Về sản
+                    phẩm</a>
+                <a href="#feedback" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-700 mr-4">Đánh
+                    giá</a>
+            </div>
+            <div class="gap-6 flex-wrap justify-center hidden md:flex">
+                <a href="tel:18001234"
+                    class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700 mt-4 lg:mt-0"><i
+                        class="fas fa-phone glowing-icon"></i>Gọi
+                    ngay</a>
+                <a href="tel:18001234"
+                    class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700 mt-4 lg:mt-0"><i
+                        class="fab fa-tiktok glowing-icon"></i>Tiktok</a>
+                <a href="tel:18001234"
+                    class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700 mt-4 lg:mt-0"><i
+                        class="fab fa-facebook-square glowing-icon"></i>Facebook</a>
+                <a href="tel:18001234"
+                    class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700 mt-4 lg:mt-0">
+                    <div class="zalo-icon glowing-icon"></div>Zalo
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="bg-white px-4 py-24 md:py-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="md:flex md:flex-wrap">
+                <div class="md:w-1/2 text-center md:text-left md:pt-16">
+                    <h1 class="font-bold text-3xl text-black mb-4">Giảm đau dạ dày một cách tự nhiên</h1>
+                    <p class="text-gray-500 mb-4">Giảm đau dạ dày một cách tự nhiên và hiệu quả với sản phẩm của chúng
+                        tôi. Được chiết xuất từ những thành phần tự nhiên, sản phẩm không chỉ giúp giảm đau mà còn bảo
+                        vệ dạ dày của bạn.</p>
+                    <p class="text-gray-500 mb-4 hidden md:block">
+                        Ngoài ra, sản phẩm của chúng tôi còn giúp cải thiện chức năng tiêu hóa, giảm đầy hơi và khó
+                        tiêu. Bạn có thể yên tâm sử dụng sản phẩm của chúng tôi vì nó được sản xuất và đóng gói trong
+                        một môi trường đảm bảo vệ sinh và an toàn.
+
+                        Đặc biệt, sản phẩm của chúng tôi không gây tác dụng phụ và phù hợp cho cả người lớn và trẻ em.
+                        Với công thức độc đáo và hiệu quả, sản phẩm của chúng tôi đã được nhiều người tin dùng và khẳng
+                        định chất lượng.
+
+                        Hãy sử dụng sản phẩm của chúng tôi để có một cuộc sống khỏe mạnh, thoải mái và tận hưởng những
+                        bữa ăn ngon miệng mà không lo đau dạ dày nhé!
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://via.placeholder.com/500x500.png" alt="Product Image"
+                        class="shadow-lg mx-auto md:mx-0 md:ml-6" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- About Section -->
+    <section id="about" class="bg-gray-100 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-black mb-4">Về sản phẩm</h2>
+            <p class="text-gray-500 mb-4">Sản phẩm giảm đau dạ dày của chúng tôi là sự kết hợp hoàn hảo giữa các thành
+                phần
+                tự nhiên như cam thảo, nghệ và đại hoàng. Chúng tôi cam kết rằng sản phẩm của chúng tôi không chứa bất
+                kỳ hóa chất độc
+                hại nào và đảm bảo an toàn cho sức khỏe của bạn.</p>
+            <p class="text-gray-500 mb-4">Không những giúp giảm đau dạ dày một cách nhanh chóng, sản phẩm của chúng tôi
+                còn có tác dụng
+                bảo vệ dạ dày của bạn. Điều này làm cho sản phẩm của chúng tôi trở thành sự lựa chọn tốt nhất cho những
+                người bị đau
+                dạ dày và muốn bảo vệ sức khỏe của mình.</p>
+        </div>
+    </section>
+    <!-- Feedback Section -->
+    <section id="feedback" class="bg-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-black mb-4">Phản hồi của khách hàng</h2>
+            <div class="flex flex-wrap -mx-4">
+                <div class="md:w-1/2 px-4 mb-8">
+                    <div class="flex items-start bg-gray-200 rounded-lg p-6">
+                        <div class="mr-4 w-2/6">
+                            <img src="https://via.placeholder.com/450x450">
+                        </div>
+                        <div class="w-4/6">
+
+                            <p class="text-gray-500 mb-4">Tôi đã sử dụng sản phẩm của bạn và rất hài lòng với hiệu quả
+                                của
+                                nó. Sản phẩm của bạn thật sự giúp tôi
+                                giảm đau dạ dày một cách nhanh chóng và hiệu quả.</p>
+                            <p class="text-gray-500">- Phạm Thị D</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 px-4 mb-8">
+                    <div class="flex items-start bg-gray-200 rounded-lg p-6">
+                        <div class="mr-4 w-2/6">
+                            <img src="https://via.placeholder.com/450x450">
+                        </div>
+                        <div class="w-4/6">
+
+                            <p class="text-gray-500 mb-4">Tôi đã sử dụng sản phẩm của bạn và rất hài lòng với hiệu quả
+                                của
+                                nó. Sản phẩm của bạn thật sự giúp tôi
+                                giảm đau dạ dày một cách nhanh chóng và hiệu quả.</p>
+                            <p class="text-gray-500">- Phạm Thị D</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 px-4 mb-8">
+                    <div class="flex items-start bg-gray-200 rounded-lg p-6">
+                        <div class="mr-4 w-2/6">
+                            <img src="https://via.placeholder.com/450x450">
+                        </div>
+                        <div class="w-4/6">
+
+                            <p class="text-gray-500 mb-4">Tôi đã sử dụng sản phẩm của bạn và rất hài lòng với hiệu quả
+                                của
+                                nó. Sản phẩm của bạn thật sự giúp tôi
+                                giảm đau dạ dày một cách nhanh chóng và hiệu quả.</p>
+                            <p class="text-gray-500">- Phạm Thị D</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 px-4 mb-8">
+                    <div class="flex items-start bg-gray-200 rounded-lg p-6">
+                        <div class="mr-4 w-2/6">
+                            <img src="https://via.placeholder.com/450x450">
+                        </div>
+                        <div class="w-4/6">
+
+                            <p class="text-gray-500 mb-4">Tôi đã sử dụng sản phẩm của bạn và rất hài lòng với hiệu quả
+                                của
+                                nó. Sản phẩm của bạn thật sự giúp tôi
+                                giảm đau dạ dày một cách nhanh chóng và hiệu quả.</p>
+                            <p class="text-gray-500">- Phạm Thị D</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Video Section -->
+    <section id="video" class="bg-gray-100 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-black mb-4">Xem thử sản phẩm của chúng tôi</h2>
+            <div class="embed-responsive embed-responsive-16by9 flex justify-center">
+                <!-- Insert YouTube video code here -->
+                <iframe class="embed-responsive-item w-full h-72 md:h-96" src="https://www.youtube.com/embed/VIDEO_ID"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-black mb-4">Liên hệ với chúng tôi</h2>
+                    <p class="text-gray-500 mb-8">Nếu bạn có bất kỳ câu hỏi nào về sản phẩm hoặc muốn đặt hàng, vui lòng
+                        điền
+                        vào thông tin bên dưới hoặc liên hệ với chúng tôi</p>
+                    <div class="gap-6 flex-wrap flex mb-6 justify-center md:justify-start">
+                        <a href="tel:18001234"
+                            class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700 mt-4 lg:mt-0"><i
+                                class="fas fa-phone glowing-icon"></i>Gọi
+                            ngay</a>
+                        <a href="tel:18001234"
+                            class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700 mt-4 lg:mt-0"><i
+                                class="fab fa-tiktok glowing-icon"></i>Tiktok</a>
+                        <a href="tel:18001234"
+                            class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700 mt-4 lg:mt-0"><i
+                                class="fab fa-facebook-square glowing-icon"></i>Facebook</a>
+                        <a href="tel:18001234"
+                            class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700 mt-4 lg:mt-0">
+                            <div class="zalo-icon glowing-icon"></div>Zalo
+                        </a>
+                    </div>
+                    <form action="#" method="POST" class="max-w-sm">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-bold mb-2">Họ và tên</label>
+                            <input type="text" id="name" name="name" placeholder="Họ và tên của bạn"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 font-bold mb-2">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Số điện thoại của bạn"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email của bạn"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        </div>
+                        <div class="mb-4">
+                            <label for="address" class="block text-gray-700 font-bold mb-2">Địa chỉ</label>
+                            <input type="text" id="address" name="address" placeholder="Địa chỉ của bạn"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                        </div>
+                        <div class="mb-4">
+                            <label for="note" class="block text-gray-700 font-bold mb-2">Ghi chú</label>
+                            <textarea id="note" name="message" placeholder="Ghi chú"
+                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="button-3d bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline text-uppercase">Đặt
+                            hàng ngay</button>
+
+
+                    </form>
+
+                </div>
+                <div class="hidden md:block w-1/2">
+                    <img class="w-full h-full rounded" src="https://via.placeholder.com/500x500">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-gray-200 py-6 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div class="flex flex-col mb-4 md:mb-0">
+                    <div class="flex items-center flex-shrink-0 text-black mr-6">
+                        <span class="font-semibold text-xl tracking-tight">Giảm đau dạ dày</span>
+                    </div>
+                    <span class="font-medium text-sm">Công ty ABC XYZ</span>
+                </div>
+                <div>
+                    <h4 class="font-bold">Liên hệ với chúng tôi tại:</h4>
+                    <div class="font-medium text-sm">
+                        <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP. HCM</p>
+                        <p>Điện thoại: 0123 456 789</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- <div class="mt-6">
+                <img src="https://cdn.dangkywebsitevoibocongthuong.com/wp-content/uploads/2018/06/logo-footer-2-e1543383508896.png"
+                    alt="">
+            </div> -->
+        </div>
+    </footer>
+
+    <section id="floating-social-buttons">
+        <div class="px-8 justify-between flex md:hidden fixed bottom-0 w-full py-4 bg-gray-600 bg-opacity-70">
+            <a href="tel:18001234"
+                class="button-3d w-12 h-12 flex justify-center gap-2 items-center text-sm leading-none bg-white rounded-full text-black hover:border-transparent hover:text-white hover:bg-gray-700"><i
+                    class="fas fa-phone glowing-icon"></i></a>
+            <a href="tel:18001234"
+                class="button-3d w-12 h-12 flex justify-center gap-2 items-center text-sm leading-none bg-white rounded-full text-black hover:border-transparent hover:text-white hover:bg-gray-700"><i
+                    class="fab fa-tiktok glowing-icon"></i></a>
+            <a href="tel:18001234"
+                class="button-3d w-12 h-12 flex justify-center gap-2 items-center text-sm leading-none bg-white rounded-full text-black hover:border-transparent hover:text-white hover:bg-gray-700"><i
+                    class="fab fa-facebook-square glowing-icon"></i></a>
+            <a href="tel:18001234"
+                class="button-3d w-12 h-12 flex justify-center gap-2 items-center text-sm leading-none bg-white rounded-full text-black hover:border-transparent hover:text-white hover:bg-gray-700">
+                <div class="zalo-icon glowing-icon"></div>
+            </a>
+        </div>
+    </section>
+    <!--Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        var navToggle = document.getElementById("nav-toggle");
+        var navContent = document.getElementById("nav-content");
+
+        navToggle.addEventListener("click", function () {
+            if (navContent.classList.contains("hidden")) {
+                navContent.classList.remove("hidden");
+            } else {
+                navContent.classList.add("hidden");
+            }
+        });
+
+        const header = $('#app-header');
+
+        $(window).scroll(function (e) {
+            if (header.offset().top !== 0) {
+                if (!header.hasClass('shadow')) {
+                    header.addClass('shadow');
+                }
+            } else {
+                header.removeClass('shadow');
+            }
+        });
+    </script>
+</body>
+
+</html>

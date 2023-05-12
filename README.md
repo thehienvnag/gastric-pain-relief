@@ -1,6 +1,8 @@
 # gastric-pain-relief
 This is a simple static HTML page that provides natural and effective relief for gastric pain. It runs on Node.js and uses Tailwind CSS for styling.
 
+View live demo at: https://gastric-pain-relief.herokuapp.com/
+
 # Getting Started
 To get started, simply clone the repository and run the Node.js server:
 ```

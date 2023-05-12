@@ -8,6 +8,7 @@ To get started, simply clone the repository and run the Node.js server:
 ```
 git clone https://github.com/yourusername/gastric-pain-relief.git
 cd gastric-pain-relief
+npm install
 node index.ts
 ```
 

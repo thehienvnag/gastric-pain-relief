@@ -2,13 +2,14 @@
   "name": "gastric_pain_relief",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "ts-node index.ts",
-    "dev": "nodemon -x ts-node index.ts"
+    "start": "npm run build && node built/index.js",
+    "dev": "nodemon -x ts-node index.ts",
+    "build": "rimraf ./built  && tsc && cpy 'public/**/*' built/public"
   },
   "keywords": [],
-  "author": "",
+  "author": "ivanhswe <ivanhswe@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.17",
@@ -17,5 +18,10 @@
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
-  }
+  },
+  "devDependencies": {
+    "cpy-cli": "^3.1.0",
+    "rimraf": "^5.0.0"
+  },
+  "repository": "https://github.com/thehienvnag/gastric-pain-relief.git"
 }

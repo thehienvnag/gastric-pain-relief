@@ -8,6 +8,8 @@ createApp({
             linkTiktok: 'https://www.tiktok.com/@anthinhkenbar1',
             linkMessenger: 'https://m.me/thehienvnag',
             linkZalo: 'Http://zalo.me/0973983089',
+            youtubeVideoSrc: 'https://www.youtube.com/embed/Q2VJn4iDqbc',
+            googleFormSrc: 'https://docs.google.com/forms/d/e/1FAIpQLSfAr8UwIFkHAeWjXUAFCOJrDb-RE3ubrM7YUaOpsKugQ6FaYA/viewform?embedded=true',
             userFeedbacks: [
                 {
                     userImage: 'https://via.placeholder.com/450x450',

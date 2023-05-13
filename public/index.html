@@ -241,7 +241,7 @@
                 <div class="embed-responsive embed-responsive-16by9 flex justify-center">
                     <!-- Insert YouTube video code here -->
                     <iframe class="embed-responsive-item w-full h-72 md:h-96"
-                        src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+                        :src="youtubeVideoSrc" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -268,34 +268,18 @@
         <!-- Contact Section -->
         <section id="contact" class="bg-white py-12 px-4">
             <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-black mb-4">Liên hệ với chúng tôi</h2>
                 <div class="flex justify-between gap-12">
+
+                    <!-- <div> -->
                     <div class="md:w-1/2">
-                        <h2 class="text-3xl font-bold text-black mb-4">Liên hệ với chúng tôi</h2>
+
                         <p class="text-gray-500 mb-8">Nếu bạn có bất kỳ câu hỏi nào về sản phẩm hoặc muốn đặt hàng, vui
                             lòng
                             điền
                             vào thông tin bên dưới hoặc liên hệ với chúng tôi</p>
-                        <div class="gap-2 flex-wrap flex mb-6 justify-center md:justify-start">
-                            <a :href="'tel:' + phoneNumber"
-                                class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700"><i
-                                    class="fas fa-phone glowing-icon"></i>Gọi
-                                ngay</a>
-                            <a :href="linkTiktok"
-                                class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700"><i
-                                    class="fab fa-tiktok glowing-icon"></i>Tiktok</a>
-                            <a :href="linkFacebook"
-                                class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700"><i
-                                    class="fab fa-facebook-square glowing-icon"></i>Facebook</a>
-                            <a :href="linkMessenger"
-                                class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700">
-                                <div class="messenger-icon glowing-icon"></div>Messenger
-                            </a>
-                            <a :href="linkZalo"
-                                class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700">
-                                <div class="zalo-icon glowing-icon"></div>Zalo
-                            </a>
-                        </div>
-                        <form action="#" method="POST" class="w-full">
+
+                        <!-- <form action="#" method="POST" class="w-full">
                             <div class="mb-4">
                                 <label for="name" class="block text-gray-700 font-bold mb-2">Họ và tên</label>
                                 <input type="text" id="name" name="name" placeholder="Họ và tên của bạn"
@@ -326,11 +310,35 @@
                                 hàng ngay</button>
 
 
-                        </form>
-
+                        </form> -->
+                        <iframe
+                            :src="googleFormSrc"
+                            width="100%" height="1400" frameborder="0" marginheight="0"
+                            marginwidth="0">Loading…</iframe>
                     </div>
                     <div class="hidden md:block w-1/2">
-                        <img class="w-full h-full rounded" src="https://via.placeholder.com/500x500">
+                        <div class="gap-2 flex-wrap flex mb-6 justify-center md:justify-start">
+                            <a :href="'tel:' + phoneNumber"
+                                class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700"><i
+                                    class="fas fa-phone glowing-icon"></i>Gọi
+                                ngay</a>
+                            <a :href="linkTiktok"
+                                class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700"><i
+                                    class="fab fa-tiktok glowing-icon"></i>Tiktok</a>
+                            <a :href="linkFacebook"
+                                class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700"><i
+                                    class="fab fa-facebook-square glowing-icon"></i>Facebook</a>
+                            <a :href="linkMessenger"
+                                class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700">
+                                <div class="messenger-icon glowing-icon"></div>Messenger
+                            </a>
+                            <a :href="linkZalo"
+                                class="button-3d flex gap-2 items-center inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black hover:border-transparent hover:text-white hover:bg-gray-700">
+                                <div class="zalo-icon glowing-icon"></div>Zalo
+                            </a>
+                        </div>
+                        <img class="w-full rounded" src="https://via.placeholder.com/500x500">
+                        <img class="w-full rounded mt-16" src="https://via.placeholder.com/500x500">
                     </div>
                 </div>
 

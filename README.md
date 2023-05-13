@@ -9,7 +9,7 @@ To get started, simply clone the repository and run the Node.js server:
 git clone https://github.com/yourusername/gastric-pain-relief.git
 cd gastric-pain-relief
 npm install
-node index.ts
+npm start
 ```
 
 Then, open your web browser and go to http://localhost:5000 to view the page.

@@ -250,71 +250,14 @@
             <div class="max-w-6xl mx-auto">
                 <h2 class="text-3xl font-bold text-black mb-4">Phản hồi của khách hàng</h2>
                 <div class="flex flex-wrap -mx-4">
-                    <div class="md:w-1/2 px-4 mb-8">
+                    <div class="md:w-1/2 px-4 mb-8" v-for="(item, index) in userFeedbacks" :key="index">
                         <div class="flex items-start bg-gray-200 rounded-lg p-6">
                             <div class="mr-4 w-2/6">
-                                <img src="https://via.placeholder.com/450x450">
+                                <img :src="item.userImage">
                             </div>
                             <div class="w-4/6">
-
-                                <p class="text-gray-500 mb-4">Tôi đã sử dụng sản phẩm của bạn và rất hài lòng với hiệu
-                                    quả
-                                    của
-                                    nó. Sản phẩm của bạn thật sự giúp tôi
-                                    giảm đau dạ dày một cách nhanh chóng và hiệu quả.</p>
-                                <p class="text-gray-500">- Phạm Thị D</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:w-1/2 px-4 mb-8">
-                        <div class="flex items-start bg-gray-200 rounded-lg p-6">
-                            <div class="mr-4 w-2/6">
-                                <img src="https://via.placeholder.com/450x450">
-                            </div>
-                            <div class="w-4/6">
-
-                                <p class="text-gray-500 mb-4">Tôi đã sử dụng sản phẩm của bạn và rất hài lòng với hiệu
-                                    quả
-                                    của
-                                    nó. Sản phẩm của bạn thật sự giúp tôi
-                                    giảm đau dạ dày một cách nhanh chóng và hiệu quả.</p>
-                                <p class="text-gray-500">- Phạm Thị D</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:w-1/2 px-4 mb-8">
-                        <div class="flex items-start bg-gray-200 rounded-lg p-6">
-                            <div class="mr-4 w-2/6">
-                                <img src="https://via.placeholder.com/450x450">
-                            </div>
-                            <div class="w-4/6">
-
-                                <p class="text-gray-500 mb-4">Tôi đã sử dụng sản phẩm của bạn và rất hài lòng với hiệu
-                                    quả
-                                    của
-                                    nó. Sản phẩm của bạn thật sự giúp tôi
-                                    giảm đau dạ dày một cách nhanh chóng và hiệu quả.</p>
-                                <p class="text-gray-500">- Phạm Thị D</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:w-1/2 px-4 mb-8">
-                        <div class="flex items-start bg-gray-200 rounded-lg p-6">
-                            <div class="mr-4 w-2/6">
-                                <img src="https://via.placeholder.com/450x450">
-                            </div>
-                            <div class="w-4/6">
-
-                                <p class="text-gray-500 mb-4">Tôi đã sử dụng sản phẩm của bạn và rất hài lòng với hiệu
-                                    quả
-                                    của
-                                    nó. Sản phẩm của bạn thật sự giúp tôi
-                                    giảm đau dạ dày một cách nhanh chóng và hiệu quả.</p>
-                                <p class="text-gray-500">- Phạm Thị D</p>
-
+                                <p class="text-gray-500 mb-4">{{ item.userFeedback }}</p>
+                                <p class="text-gray-500">- {{ item.userName }}</p>
                             </div>
                         </div>
                     </div>
